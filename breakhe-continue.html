@@ -1,0 +1,1452 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>break和continue · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-JhengHei/fontfamily.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo-link/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    關於這本書
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="SUMMARY.html">
+            
+                <a href="SUMMARY.html">
+            
+                    
+                    目錄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    Goolge帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="google-classroom.html">
+            
+                <a href="google-classroom.html">
+            
+                    
+                    Google Classroom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="xian-shang-zhi-yi-qi-ff1a-repl-it.html">
+            
+                <a href="xian-shang-zhi-yi-qi-ff1a-repl-it.html">
+            
+                    
+                    線上直譯器：Repl.it
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ke-wai-bu-chong.html">
+            
+                <a href="ke-wai-bu-chong.html">
+            
+                    
+                    課外補充
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="ji-qi-xue-xi.html">
+            
+                <a href="ji-qi-xue-xi.html">
+            
+                    
+                    機器學習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="youtubeshang-de-ke-pu-pin-dao.html">
+            
+                <a href="youtubeshang-de-ke-pu-pin-dao.html">
+            
+                    
+                    Youtube上的科普頻道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="tui-jian-yue-du-shu-dan.html">
+            
+                <a href="tui-jian-yue-du-shu-dan.html">
+            
+                    
+                    推薦閱讀書單
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="androidshang-de-zhi-neng-zhu-li.html">
+            
+                <a href="androidshang-de-zhi-neng-zhu-li.html">
+            
+                    
+                    Android上的智能助理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="zhi-hui-he-sheng-lyrebird-ai.html">
+            
+                <a href="zhi-hui-he-sheng-lyrebird-ai.html">
+            
+                    
+                    智慧合聲 - lyrebird.ai
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="shi-shi-zao-ying-xiong-ff1f.html">
+            
+                <a href="shi-shi-zao-ying-xiong-ff1f.html">
+            
+                    
+                    時勢造英雄？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="bu-hui-xie-cheng-shi-mei-guan-xi.html">
+            
+                <a href="bu-hui-xie-cheng-shi-mei-guan-xi.html">
+            
+                    
+                    不會寫程式沒關係
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    week1 - 2018/08/30
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="bu-hui-xie-cheng-shi-mei-guan-xi.html">
+            
+                <a href="bu-hui-xie-cheng-shi-mei-guan-xi.html">
+            
+                    
+                    不會寫程式沒關係
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="pythonneng-zuo-xie-shi-me-ni-ff1f.html">
+            
+                <a href="pythonneng-zuo-xie-shi-me-ni-ff1f.html">
+            
+                    
+                    Python能做些什麼呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="shi-me-shi-cheng-shi-yu-yan-ff1f.html">
+            
+                <a href="shi-me-shi-cheng-shi-yu-yan-ff1f.html">
+            
+                    
+                    什麼是程式語言？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    week2 - 2018/09/06
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="apple-ii.html">
+            
+                <a href="apple-ii.html">
+            
+                    
+                    Apple II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="di-yi-xing-yuan-ze.html">
+            
+                <a href="di-yi-xing-yuan-ze.html">
+            
+                    
+                    第一性原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="dian-nao-shang-de-0-he-1.html">
+            
+                <a href="dian-nao-shang-de-0-he-1.html">
+            
+                    
+                    電腦上的0和1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="jin-wei-fa.html">
+            
+                <a href="jin-wei-fa.html">
+            
+                    
+                    進位法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="bian-ma.html">
+            
+                <a href="bian-ma.html">
+            
+                    
+                    編碼
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    week3 - 2018/09/13
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="zi-chuan-yu-shu-zhi-xing-bie.html">
+            
+                <a href="zi-chuan-yu-shu-zhi-xing-bie.html">
+            
+                    
+                    字串與數值型別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="tiao-tuo-fu-865f-mo-fa-kun-chong.html">
+            
+                <a href="tiao-tuo-fu-865f-mo-fa-kun-chong.html">
+            
+                    
+                    跳脫符號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="shi-jian-jian-ting-he-suan-shu-yi-wei.html">
+            
+                <a href="shi-jian-jian-ting-he-suan-shu-yi-wei.html">
+            
+                    
+                    事件監聽和算術溢位
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    week4 - 2018/09/20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="input-han-shi.html">
+            
+                <a href="input-han-shi.html">
+            
+                    
+                    input( )函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="shi-me-shi-bian-shu-ff1f.html">
+            
+                <a href="shi-me-shi-bian-shu-ff1f.html">
+            
+                    
+                    什麼是變數？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="type-han-shi.html">
+            
+                <a href="type-han-shi.html">
+            
+                    
+                    type( )函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="shu-zhi-de-yi-yi.html">
+            
+                <a href="shu-zhi-de-yi-yi.html">
+            
+                    
+                    數值的意義
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    week5 - 2018/09/27
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="print-han-shi.html">
+            
+                <a href="print-han-shi.html">
+            
+                    
+                    print( )函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="none.html">
+            
+                <a href="none.html">
+            
+                    
+                    None
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="dian-nao-shang-de-cuo-wu-ti-shi-274c.html">
+            
+                <a href="dian-nao-shang-de-cuo-wu-ti-shi-274c.html">
+            
+                    
+                    電腦上的錯誤提示❌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="chuan-lie-xing-bie.html">
+            
+                <a href="chuan-lie-xing-bie.html">
+            
+                    
+                    串列型別
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    week6 - 2018/10/04
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="chuan-lie-fang-6cd5-1.html">
+            
+                <a href="chuan-lie-fang-6cd5-1.html">
+            
+                    
+                    串列方法-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="chuan-lie-fang-6cd5-2.html">
+            
+                <a href="chuan-lie-fang-6cd5-2.html">
+            
+                    
+                    串列方法-2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="tiao-xin.html">
+            
+                <a href="tiao-xin.html">
+            
+                    
+                    挑釁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="dian-nao-shang-de-cuo-wu-ti-shi.html">
+            
+                <a href="dian-nao-shang-de-cuo-wu-ti-shi.html">
+            
+                    
+                    電腦上的錯誤提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    week7 - 2018/10/11
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="suan-shu-yun-suan-zi.html">
+            
+                <a href="suan-shu-yun-suan-zi.html">
+            
+                    
+                    算術運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="zhi-pai-yun-suan-zi.html">
+            
+                <a href="zhi-pai-yun-suan-zi.html">
+            
+                    
+                    指派運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    week8 - 2018/10/18
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" >
+            
+                <span>
+            
+                    
+                    期中考停課一次
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    week9 - 2018/10/25
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="luo-ji-yun-suan-zi.html">
+            
+                <a href="luo-ji-yun-suan-zi.html">
+            
+                    
+                    邏輯運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="jin-shan-yin-shan.html">
+            
+                <a href="jin-shan-yin-shan.html">
+            
+                    
+                    立方體和圓錐體
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="bi-jiao-yun-suan-zi.html">
+            
+                <a href="bi-jiao-yun-suan-zi.html">
+            
+                    
+                    比較運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="zhuang-xiang-zhun-524728-4e0029.html">
+            
+                <a href="zhuang-xiang-zhun-524728-4e0029.html">
+            
+                    
+                    裝箱準則(一)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    week10 - 2018/11/01
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="zhuang-xiang-zhun-524728-4e8c29-548c28-4e0929.html">
+            
+                <a href="zhuang-xiang-zhun-524728-4e8c29-548c28-4e0929.html">
+            
+                    
+                    裝箱準則(二)和(三)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="len-han-shi.html">
+            
+                <a href="len-han-shi.html">
+            
+                    
+                    len( )函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="str-han-shi.html">
+            
+                <a href="str-han-shi.html">
+            
+                    
+                    str( )函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="d83e-dd2c-tiao-zhan-ti-zhuang-xiang-zhun-ze-ff08-si-ff09.html">
+            
+                <a href="d83e-dd2c-tiao-zhan-ti-zhuang-xiang-zhun-ze-ff08-si-ff09.html">
+            
+                    
+                    🤬挑戰題 - 裝箱準則（四）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    week 11 - 2018/11/08
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" >
+            
+                <span>
+            
+                    
+                    校慶預演停課一次
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    week 12 - 2018/11/15
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="randomluan-shu-mo-zu.html">
+            
+                <a href="randomluan-shu-mo-zu.html">
+            
+                    
+                    random亂數模組
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="liu-cheng-tu.html">
+            
+                <a href="liu-cheng-tu.html">
+            
+                    
+                    流程圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="ifjue-ze-jie-gou.html">
+            
+                <a href="ifjue-ze-jie-gou.html">
+            
+                    
+                    if抉擇結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    week 13 - 2018/11/22
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="ifde-lian-xi-ti.html">
+            
+                <a href="ifde-lian-xi-ti.html">
+            
+                    
+                    if的練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    week14 - 2018/11/29
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="3010-han-shi-function-3011-he-3010-fang-fa-method.html">
+            
+                <a href="3010-han-shi-function-3011-he-3010-fang-fa-method.html">
+            
+                    
+                    【函式Function】和【方法Method】
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="zi-chuan-fang-fa-de-lian-xi-ti.html">
+            
+                <a href="zi-chuan-fang-fa-de-lian-xi-ti.html">
+            
+                    
+                    字串方法的練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    week15 - 2018/12/06
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="kai-sa-mi-ma.html">
+            
+                <a href="kai-sa-mi-ma.html">
+            
+                    
+                    凱薩密碼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="whilehui-quan.html">
+            
+                <a href="whilehui-quan.html">
+            
+                    
+                    while迴圈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    week16 - 2018/12/13
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.18.1" data-path="breakhe-continue.html">
+            
+                <a href="breakhe-continue.html">
+            
+                    
+                    break和continue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    week17 - 2018/12/20
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" >
+            
+                <span>
+            
+                    
+                    期中測驗：選擇題+實作題
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    week18 - 2018/12/27
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="chao-zhuang-hui-quan-xu-shu.html">
+            
+                <a href="chao-zhuang-hui-quan-xu-shu.html">
+            
+                    
+                    巢狀迴圈敘述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="forhui-quan.html">
+            
+                <a href="forhui-quan.html">
+            
+                    
+                    for迴圈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    week19 - 2019/01/03
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="whilehui-quan-de-lian-xi-ti.html">
+            
+                <a href="whilehui-quan-de-lian-xi-ti.html">
+            
+                    
+                    迴圈的練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="bi-jin-03c0-ff01.html">
+            
+                <a href="bi-jin-03c0-ff01.html">
+            
+                    
+                    逼近π！
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >break和continue</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="break&#x548C;continue">break&#x548C;continue</h1>
+<p>&#x5728;&#x4E00;&#x500B;&#x8FF4;&#x5708;&#x4E2D;&#xFF0C;&#x53EA;&#x8981;&#x7D42;&#x6B62;&#x689D;&#x4EF6;&#x4E0D;&#x6210;&#x7ACB;&#xFF0C;&#x7A0B;&#x5F0F;&#x90FD;&#x4E0D;&#x6703;&#x96E2;&#x958B;&#x8FF4;&#x5708;&#x4E26;&#x7D42;&#x6B62;&#x3002;<br>&#x6240;&#x4EE5;&#x50CF;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-py"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    print(<span class="hljs-string">&apos;hello&apos;</span>)
+</code></pre>
+<p>&#x539F;&#x5247;&#x4E0A;&#x6703;&#x7121;&#x6B62;&#x76E1;&#x7684;&#x4E00;&#x76F4;print&#x4E0B;&#x53BB;&#xFF0C;&#x76F4;&#x5230;&#x96FB;&#x8166;&#x96FB;&#x6C60;&#x88AB;&#x69A8;&#x4E7E;&#x3002;</p>
+<hr>
+<h5 id="&#x1F5D2;&#xFE0F;break&#x6558;&#x8FF0;">&#x1F5D2;&#xFE0F;break&#x6558;&#x8FF0;</h5>
+<p>&#x4E0D;&#x904E;&#xFF0C;&#x6211;&#x5011;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x5728;&#x8FF4;&#x5708;&#x4E2D;&#x8A2D;&#x7F6E;if&#x5224;&#x65B7;&#x5F0F;&#xFF0C;&#x5728;&#x7B26;&#x5408;&#x689D;&#x4EF6;&#x6642;&#x5F37;&#x5236;&#x96E2;&#x958B;&#x8FF4;&#x5708;&#xFF0C;&#x9019;&#x5C31;&#x662F;break&#x3002;</p>
+<h5 id="&#x1F4DD;&#x7BC4;&#x4F8B;">&#x1F468;&#x200D;&#x1F4BB;&#x8AB2;&#x5802;&#x7DF4;&#x7FD2; </h5>
+<ol>
+<li><p>&#x8CED;&#x5F92;&#x7684;&#x731C;&#x6578;&#x5B57;-III <a href="https://repl.it/@iec_nknu/8Q-5-Du-Tu-De-Cai-Shu-Zi-III" target="_blank">&#x9EDE;&#x6211;&#x524D;&#x5F80;</a></p>
+<pre><code class="lang-py">&#x7D93;&#x904E;&#x4E0A;&#x6B21;&#x7684;&#x7DF4;&#x7FD2;(<span class="hljs-number">7</span>A<span class="hljs-number">-2</span>)&#x4E4B;&#x5F8C;&#xFF0C;&#x8CED;&#x5F92;&#x7684;&#x6280;&#x5DE7;&#x5927;&#x5927;&#x589E;&#x9032;&#xFF0C;
+&#x73FE;&#x5728;&#x4ED6;&#x5DF2;&#x7D93;&#x4E0D;&#x6EFF;&#x8DB3;&#x65BC;&#x731C;<span class="hljs-number">1</span>~<span class="hljs-number">6</span>&#x7684;&#x6578;&#x5B57;&#x4E86;&#xFF0C;
+&#x6E96;&#x5099;&#x64F4;&#x5927;&#x7BC4;&#x570D;&#xFF0C;&#x6311;&#x6230;<span class="hljs-number">1</span>~<span class="hljs-number">20</span>&#x7684;&#x6578;&#x5B57;&#xFF0C;
+&#x6839;&#x64DA;&#x8981;&#x6C42;&#xFF0C;&#x4ED6;&#x6BCF;&#x6B21;&#x90FD;&#x80FD;&#x6709;&#x4E94;&#x6B21;&#x7684;&#x6A5F;&#x6703;&#x731C;&#x6E2C;&#x6578;&#x5B57;&#x3002;
+
+&#x8ACB;&#x5BEB;&#x4E00;&#x6BB5;&#x5492;&#x8A9E;&#xFF0C;&#x8B93;&#x5492;&#x8A9E;&#x96A8;&#x6A5F;&#x751F;&#x7522;&#x4E00;&#x500B;<span class="hljs-number">1</span>~<span class="hljs-number">20</span>&#x7684;&#x6578;&#x5B57;&#xFF0C;&#x8CED;&#x5F92;&#x4E5F;&#x8F38;&#x5165;&#x4E00;&#x500B;<span class="hljs-number">1</span>~<span class="hljs-number">20</span>&#x7684;&#x6578;&#x5B57;&#xFF0C;
+&#x6700;&#x5F8C;&#x6BD4;&#x8F03;&#x5169;&#x8005;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x770B;&#x770B;&#x8CED;&#x5F92;&#x662F;&#x5426;&#x80FD;&#x5920;&#x731C;&#x4E2D;&#x3002;
+&#x3010;&#x731C;&#x4E2D;&#x8F38;&#x51FA;<span class="hljs-string">&apos;&#x731C;&#x4E2D;&#x4E86;&apos;</span>&#xFF0C;&#x731C;&#x932F;&#x8F38;&#x51FA;<span class="hljs-string">&apos;&#x7B2C;X&#x6B21;&#x5617;&#x8A66;&#xFF0C;&#x518D;&#x8A66;&#x4E00;&#x6B21;&apos;</span>&#xFF0C;&#x731C;&#x932F;&#x4E94;&#x6B21;&#x4ECD;&#x4E0D;&#x884C;&#x5247;&#x8F38;&#x51FA;<span class="hljs-string">&apos;&#x6700;&#x5F8C;&#x4E00;&#x6B21;&#x4E86;&#xFF0C;&#x6311;&#x6230;&#x5931;&#x6557;&apos;</span>&#x3002;&#x3011;
+</code></pre>
+</li>
+</ol>
+<hr>
+<h5 id="&#x1F5D2;&#xFE0F;continue&#x6558;&#x8FF0;">&#x1F5D2;&#xFE0F;continue&#x6558;&#x8FF0;</h5>
+<p>continue&#x5247;&#x662F;&#x53EF;&#x4EE5;&#x8DF3;&#x904E;&#x8FF4;&#x5708;&#x4E2D;&#x7684;&#x90E8;&#x5206;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x5728;&#x8FF4;&#x5708;&#x4E2D;&#x8A2D;&#x7F6E;if&#x5224;&#x65B7;&#x5F0F;&#xFF0C;&#x5728;&#x7B26;&#x5408;&#x689D;&#x4EF6;&#x6642;&#x76F4;&#x63A5;&#x9032;&#x5165;&#x4E0B;&#x4E00;&#x6B21;&#x7684;&#x8FF4;&#x5708;&#x4E4B;&#x4E2D;&#x3002;</p>
+<h5 id="&#x1F4DD;&#x7BC4;&#x4F8B;">&#x1F468;&#x200D;&#x1F4BB;&#x8AB2;&#x5802;&#x7DF4;&#x7FD2; </h5>
+<ol>
+<li><p>continue&#x7DF4;&#x7FD2; <a href="https://repl.it/@iec_nknu/8Q-22-continueLian-Xi" target="_blank">&#x9EDE;&#x6211;&#x524D;&#x5F80;</a></p>
+<pre><code class="lang-py">&#x4F7F;&#x7528;<span class="hljs-keyword">while</span>&#x8FF4;&#x5708;&#x642D;&#x914D;<span class="hljs-keyword">continue</span>&#x5370;&#x51FA;<span class="hljs-number">1</span>~<span class="hljs-number">100</span>&#x4E4B;&#x9593;<span class="hljs-number">7</span>&#x7684;&#x500D;&#x6578;&#x3002;
+</code></pre>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"break和continue","level":"1.18.1","depth":2,"next":{"title":"week17 - 2018/12/20","level":"1.19","depth":1,"ref":"","articles":[{"title":"期中測驗：選擇題+實作題","level":"1.19.1","depth":2,"ref":"","articles":[]}]},"previous":{"title":"week16 - 2018/12/13","level":"1.18","depth":1,"ref":"","articles":[{"title":"break和continue","level":"1.18.1","depth":2,"path":"breakhe-continue.md","ref":"breakhe-continue.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["IECLOGO@git+https://github.com/iecnknu/gitbook-plugin-IECLOGO.git","JhengHei@git+https://github.com/iecnknu/gitbook-plugin-JhengHei.git","splitter","insert-logo-link","-sharing","expandable-chapters","copy-code-button","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"insert-logo-link":{"src":"https://drive.google.com/uc?export=download&id=1VS0mfnFHUO5aeKYD0aIavn4pZLL1GOW8","url":"www.nknucsec.com"},"search":{},"JhengHei":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"IECLOGO":{"link":"https://www.nknucsec.com","publisher":"Published with IEC, NKNU"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"breakhe-continue.md","mtime":"2019-01-03T05:22:51.582Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-03T05:24:09.478Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-IECLOGO/rmlink.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
